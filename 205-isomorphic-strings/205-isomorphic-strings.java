@@ -21,12 +21,13 @@ class Solution {
                
                if(tMap.containsKey(tChar))
                {
-                   if(tMap.get(tChar) != sChar)return false;
+                   if(!tMap.get(tChar).equals(sChar))
+                       return false;
                }else
                    {
                        tMap.put(tChar,sChar);
                    }
-               }
+        }
                return true;
     }
 }
