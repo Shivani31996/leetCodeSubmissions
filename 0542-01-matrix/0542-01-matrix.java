@@ -10,7 +10,7 @@ class Solution {
         int m = matrix.length;
         int n = matrix[0].length;
         
-        int dirs[][] = new int[][] {{0,1},{0,-1},{1,0},{-1,0}};
+        int dirs[][] = {{0,1},{0,-1},{1,0},{-1,0}};
         
         for (int i = 0; i < m;i++)
         {
