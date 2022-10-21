@@ -1,41 +1,43 @@
 class Solution {
+    int i;
+    
     public String decodeString(String s) {
+        
         StringBuilder currStr = new StringBuilder();
         int num = 0;
         
-        Stack<StringBuilder> str = new Stack<>();
-        Stack<Integer> no = new Stack<>();
-        
-        for(int i = 0; i<s.length();i++)
+        while(i < s.length())
         {
             char c = s.charAt(i);
+            
             if(Character.isDigit(c))
+            {
                 num = num * 10 + c - '0';
+                i++;
+            }
             
             else if(c == '[')
             {
-                str.push(currStr);
-                no.push(num);
-                
-                currStr = new StringBuilder();
+                i++;
+                String decode = decodeString(s);
+                for(int j = 0;j < num;j++)
+                {
+                    currStr.append(decode);
+                }
                 num = 0;
             }
             
             else if(c == ']')
             {
-                int k = no.pop();
-                StringBuilder temp = str.pop();
-                for(int j = 0; j < k;j++){
-                    temp.append(currStr);
-                }
-                currStr = temp;
+                i++;
+                return currStr.toString();
             }
-            
             else
             {
                 currStr.append(c);
+                i++;
             }
         }
-        return currStr.toString();
+    return currStr.toString();
     }
 }
