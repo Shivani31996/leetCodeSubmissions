@@ -34,8 +34,8 @@ class Solution {
             }
             else
             {
-                currStr.append(c);
                 i++;
+                currStr.append(c);
             }
         }
     return currStr.toString();
