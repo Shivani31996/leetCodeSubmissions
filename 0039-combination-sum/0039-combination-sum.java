@@ -22,15 +22,16 @@ class Solution {
         
         if(target == 0)
         {
-            result.add(path);
+            result.add(new ArrayList<>(path));
             return; }
+        
         //logic
-        
-        //no choose
-        helper(candidates,target,i+1,new ArrayList<>(path));
-        
-        //choose
+        helper(candidates,target,i+1,path);
+        //action
         path.add(candidates[i]);
-        helper(candidates,target - candidates[i], i, new ArrayList<>(path));
+        //recurse
+        helper(candidates,target - candidates[i],i,path);
+        //backtrack
+        path.remove(path.size() - 1);
     }
 }
