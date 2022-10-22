@@ -14,10 +14,10 @@ class Solution {
         return result;
     }
     
-    private void helper(int[] candidates, int target, int i, List<Integer> path)
+    private void helper(int[] candidates, int target, int index, List<Integer> path)
     {
         //base
-        if(i == candidates.length || target < 0)
+        if(target < 0)
             return;
         
         if(target == 0)
@@ -26,12 +26,13 @@ class Solution {
             return; }
         
         //logic
-        helper(candidates,target,i+1,path);
-        //action
-        path.add(candidates[i]);
-        //recurse
-        helper(candidates,target - candidates[i],i,path);
-        //backtrack
-        path.remove(path.size() - 1);
+        for(int i = index; i< candidates.length;i++)
+        {
+            path.add(candidates[i]);
+            
+            helper(candidates,target - candidates[i],i,path);
+            
+            path.remove(path.size() - 1);
+        }
     }
 }
