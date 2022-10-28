@@ -15,15 +15,16 @@ class Solution {
         //base
         if(i == nums.length)
         {
-            result.add(path);
+            result.add(new ArrayList<>(path));
             return;
         }
         //logic
             //not choose
-        helper(nums,i+1,new ArrayList<>(path));
+        helper(nums,i+1,path);
         
             //choose
         path.add(nums[i]);
-        helper(nums,i+1,new ArrayList<>(path));
+        helper(nums,i+1,path);
+        path.remove(path.size() - 1);
     }
 }
