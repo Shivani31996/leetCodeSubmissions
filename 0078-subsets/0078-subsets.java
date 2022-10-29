@@ -10,21 +10,20 @@ class Solution {
         return result;
     }
     
-    private void helper(int[] nums, int i, List<Integer> path)
+    private void helper(int[] nums, int index, List<Integer> path)
     {
         //base
-        if(i == nums.length)
-        {
-            result.add(new ArrayList<>(path));
-            return;
-        }
-        //logic
-            //not choose
-        helper(nums,i+1,path);
         
-            //choose
-        path.add(nums[i]);
-        helper(nums,i+1,path);
-        path.remove(path.size() - 1);
+        result.add(path);
+        //logic 
+        for(int i = index;i<nums.length;i++)
+        {
+            //action
+            List<Integer> temp = new ArrayList<>(path);
+            temp.add(nums[i]);
+            
+            //recurse
+            helper(nums,i+1,temp);
+        }
     }
 }
