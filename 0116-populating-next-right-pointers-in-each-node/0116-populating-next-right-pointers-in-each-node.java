@@ -24,31 +24,28 @@ class Node {
 class Solution {
     public Node connect(Node root) {
         if(root == null)
-            return root;
-        Queue<Node> q = new LinkedList<>();
-        Node prev = null;
-        
-        q.add(root);
-        
-        while(!q.isEmpty())
         {
-
-            int size = q.size();
-            for(int i = 0; i<size;i++)
+            return null;
+        }
+        
+        Node level = root;
+        
+        while(level.left != null)
+        {
+            Node curr = level;
+            
+            while(curr != null)
             {
-                Node curr = q.poll();
-                if(i != 0)
-                {
-                    prev.next = curr;
-                }
-                prev = curr;
+                curr.left.next = curr.right;
                 
-                if(curr.left != null)
+                if(curr.next != null)
                 {
-                    q.add(curr.left);
-                    q.add(curr.right);
+                    curr.right.next = curr.next.left;
                 }
+                curr = curr.next;
             }
+            level = level.left;
+
         }
         return root;
     }
