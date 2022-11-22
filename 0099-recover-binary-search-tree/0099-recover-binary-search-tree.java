@@ -16,8 +16,7 @@
 class Solution {
     TreeNode first;
     TreeNode second;
-    
-    TreeNode prev;
+
     public void recoverTree(TreeNode root) {
         if(root == null)
             return;
@@ -30,28 +29,31 @@ class Solution {
     
     public void inorder(TreeNode root)
     {
-        //base
-        if(root == null)
-        {
-            return;
-        }
-        //logic
-        inorder(root.left);
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode prev = null;
         
-        if(prev != null && prev.val >= root.val)
+        while(root != null || !st.isEmpty())
         {
-            if(first == null)
+            while(root != null)
             {
-                first = prev;
-                second = root;
+                st.push(root);
+                root = root.left;
             }
-            else
+            root = st.pop();
+            if(prev != null && prev.val >= root.val)
             {
-                second = root;
+                if(first == null)
+                {
+                    first = prev;
+                    second = root;
+                }
+                else
+                {
+                    second = root;
+                }
             }
+            prev = root;
+            root = root.right;
         }
-        
-        prev = root;
-        inorder(root.right);
     }
 }
