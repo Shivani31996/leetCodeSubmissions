@@ -14,40 +14,49 @@ class Node {
 */
 
 class Solution {
-    HashMap<Node,Node> map;
-    
     public Node copyRandomList(Node head) {
         if(head == null)
+        {
             return head;
-        map = new HashMap<>();
+        }
         
-        Node headClone = clone(head);
         Node curr = head;
-        Node currClone = headClone;
+        
+        //create a deep copy
+        while(curr != null)
+        {
+            Node newNode = new Node(curr.val);
+            newNode.next = curr.next;
+            curr.next = newNode;
+            curr = curr.next.next;
+        }
+        
+        //create random pointers for deep copy nodes
+        curr = head;
+        while(curr != null)
+        {
+            if(curr.random != null)
+            {
+                curr.next.random = curr.random.next;
+            }
+                curr = curr.next.next;
+        }
+        
+        //separate the two lists
+        curr = head;
+        Node headDeep = curr.next;
+        Node copyHead = headDeep;
         
         while(curr != null)
         {
-            currClone.next = clone(curr.next);
-            if(curr.random != null)
+            curr.next = headDeep.next;
+            if(headDeep.next != null)
             {
-                currClone.random = clone(curr.random);
+                headDeep.next = headDeep.next.next;
             }
             curr = curr.next;
-            currClone = currClone.next;
+            headDeep = headDeep.next;
         }
-        return map.get(head);
-    }
-    
-    public Node clone(Node node){
-        if(node == null)
-            return null;
-        if(map.containsKey(node))
-            return map.get(node);
-        else
-        {
-            Node newNode = new Node(node.val);
-            map.put(node,newNode);
-            return newNode;
-        }
+        return copyHead;
     }
 }
