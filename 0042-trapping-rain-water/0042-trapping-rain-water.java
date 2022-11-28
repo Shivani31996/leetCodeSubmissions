@@ -1,53 +1,41 @@
 class Solution {
     public int trap(int[] height) {
-        if(height.length == 0 || height == null)
-        {
-            return 0;
-        }
+        int l = 0;
+        int r = height.length - 1;
         
-        int n = height.length;
-        int slow = 0;
-        int fast = 1;
-        int currTrap = 0;
+        int lw = 0;
+        int rw = 0;
         int result = 0;
         
-        //forward pass
-        while(fast < n)
+        while(l <= r)
         {
-            if(height[slow] > height[fast])
+            if(lw <= rw)
             {
-                currTrap += height[slow] - height[fast];
+                //left side
+                if(height[l] < lw)
+                {
+                    result += lw - height[l];
+                }
+                else
+                {
+                    lw = height[l];
+                }
+                l++;
             }
             else
             {
-                result += currTrap;
-                slow = fast;
-                currTrap = 0;               
+                //right
+                if(height[r] < rw)
+                {
+                    result += rw - height[r];
+                }
+                else
+                {
+                    rw = height[r];
+                }
+                r--;
             }
-            fast++; 
         }
-        
-        int peak = slow;
-        currTrap = 0;
-        slow = n - 1;
-        fast = n - 2;
-        
-        //backward pass
-        while(fast >= peak)
-        {
-            if(height[slow] > height[fast])
-            {
-                currTrap += height[slow] - height[fast];
-            }
-            else
-            {
-                result += currTrap;
-                slow = fast;
-                currTrap = 0;
-            }
-            fast--;
-        }
-        
         return result;
     }
 }
