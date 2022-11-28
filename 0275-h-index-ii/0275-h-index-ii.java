@@ -23,6 +23,7 @@ class Solution {
                 high = mid - 1;
             }
         }
+        System.out.print(low);
         return n - low;
     }
 }
