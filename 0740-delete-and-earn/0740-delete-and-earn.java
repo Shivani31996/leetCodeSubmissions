@@ -14,17 +14,14 @@ class Solution {
             arr[num] += num;
         }
         
-        int n = arr.length;
-        int[] dp = new int[n];
-        
-        dp[0] = arr[0];
-        dp[1] = Math.max(arr[0],arr[1]);
-        
-        for(int i = 2; i <arr.length;i++)
+        int prev = arr[0];
+        int curr = Math.max(arr[0], arr[1]);
+        for(int i = 2; i < arr.length; i++)
         {
-            dp[i] = Math.max(dp[i - 1], arr[i] + dp[i - 2]);
+            int temp = curr;
+            curr = Math.max(prev + arr[i],temp);
+            prev = temp;
         }
-        
-        return dp[n - 1];
+        return curr;
     }
 }
