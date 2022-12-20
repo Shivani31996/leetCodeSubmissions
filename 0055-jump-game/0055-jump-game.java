@@ -2,15 +2,32 @@ class Solution {
     public boolean canJump(int[] nums) {
         if(nums.length == 0 || nums == null)
             return false;
-        int n = nums.length;
-        int target = n - 1;
-        for(int i = n-2;i >=0;i--)
+        if(nums.length == 1)
         {
-            if(nums[i] + i >= target)
+            return true;
+        }
+        int n = nums.length;
+        
+        Queue<Integer> q = new LinkedList<>();
+        HashSet<Integer> set = new HashSet<>();
+        q.add(0);
+        set.add(0);
+        
+        while(!q.isEmpty())
+        {
+            int curr = q.poll();
+            for(int j = 1; j <= nums[curr];j++)
             {
-                target = i;
+                int idx = j + curr;
+                if(idx == n - 1)
+                    return true;
+                if(!set.contains(idx))
+                {
+                    q.add(idx);
+                    set.add(idx);
+                }
             }
         }
-        return target == 0;
+        return false;
     }
 }
