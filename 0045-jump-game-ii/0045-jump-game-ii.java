@@ -4,7 +4,7 @@ class Solution {
         int currInt = nums[0];
         int nextInt = nums[0];
         
-        if(nums.length == 1)
+        if(nums.length < 2)
             return 0;
         
         for(int i=1; i < nums.length;i++)
