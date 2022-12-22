@@ -1,20 +1,35 @@
 class Solution {
     public int jump(int[] nums) {
-        int jumps = 1;
-        int currInt = nums[0];
-        int nextInt = nums[0];
-        
-        if(nums.length < 2)
+        int n = nums.length;
+        int jumps = 0;
+        if(n < 2)
             return 0;
         
-        for(int i=1; i < nums.length;i++)
+        Queue<Integer> q = new LinkedList<>();
+        HashSet<Integer> set = new HashSet<>();
+        
+        q.add(0);
+        set.add(0);
+        
+        while(!q.isEmpty())
         {
-            nextInt = Math.max(nextInt,nums[i] + i);
-            if(i == currInt && i != nums.length - 1)
+            int size = q.size();
+            for(int i = 0; i<size; i++)
             {
-                jumps++;
-                currInt = nextInt;
+                int currInd = q.poll();
+                if(currInd >= n-1)
+                    return jumps;
+                for(int j = 0; j<=nums[currInd];j++)
+                {
+                    int newInd = j + currInd;
+                    if(!set.contains(newInd))
+                    {
+                        q.add(newInd);
+                        set.add(newInd);
+                    }
+                }
             }
+            jumps++;
         }
         return jumps;
     }
