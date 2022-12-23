@@ -1,61 +1,62 @@
 class Solution {
     List<String> result;
+    HashSet<String> set;
+    int max;
     public List<String> removeInvalidParentheses(String s) {
         result = new ArrayList<>();
+        set = new HashSet<>();
         
         if(s == null)
             return result;
         
-        Queue<String> q = new LinkedList<>();
-        HashSet<String> set = new HashSet<>();
-        q.add(s);
-        set.add(s);
-        boolean flag = false;
+        dfs(s);
+        return result;
+    }
+    
+    private void dfs(String s)
+    {
+        //base
+        if(set.contains(s))
+            return;
+        if(max > s.length())
+            return;
         
-        while(!q.isEmpty() && !flag)
+        //logic
+        set.add(s);
+        if(isValid(s))
         {
-            int size = q.size();
-            for(int i=0; i<size; i++)
+            if(max != s.length())
             {
-                String curr = q.poll();
-                if(isValid(curr))
-                {
-                    flag = true;
-                    result.add(curr);
-                }
-                else
-                {
-                    if(!flag)
-                    {
-                        for(int j=0; j<curr.length(); j++)
-                        {
-                            if(Character.isLetter(curr.charAt(j)))
-                                continue;
-                            String child = curr.substring(0,j) + curr.substring(j+1);
-                            if(!set.contains(child))
-                            {
-                                set.add(child);
-                                q.add(child);
-                            }
-                        }
-                    }
-                }
+                result = new ArrayList<>();
+            }
+            max = s.length();
+            result.add(s);
+        }
+        else
+        {
+            for(int i=0; i<s.length(); i++)
+            {
+                char ch = s.charAt(i);
+                if(Character.isLetter(ch))
+                    continue;
+                String child = s.substring(0,i) + s.substring(i+1);
+                dfs(child);
             }
         }
-        return result;
     }
     
     private boolean isValid(String s)
     {
         int count = 0;
-        for(int i = 0; i<s.length();i++)
+        for(int i=0; i<s.length(); i++)
         {
             char ch = s.charAt(i);
             if(Character.isLetter(ch))
                 continue;
             else if(ch == '(')
                 count++;
-            else if(ch == ')'){
+            else if(ch == ')')
+            {
                 if(count == 0)
                     return false;
                 else
