@@ -14,27 +14,31 @@
  * }
  */
 class Solution {
-    int result;
     public int sumNumbers(TreeNode root) {
-        helper(root,0);
-        return result;
-    }
-    
-    private void helper(TreeNode root, int curr)
-    {
-        //base
-        if(root == null)
-            return;
         
-        //logic
-        helper(root.left, curr*10 + root.val);
-        //st.pop();
-        if(root.left == null && root.right == null)
+        int result = 0;
+        int currNum = 0;
+        Stack<TreeNode> st = new Stack<>();
+        Stack<Integer> currNumStack = new Stack<>();
+        
+        while(root != null || !st.isEmpty())
         {
-            result += curr*10 + root.val;
+            while(root != null)
+            {
+                currNum = currNum*10 + root.val;
+                st.push(root);
+                currNumStack.push(currNum);
+                root = root.left;
+            }
+            root = st.pop();
+            currNum = currNumStack.pop();
+            
+            if(root.left == null && root.right == null)
+            {
+                result += currNum;
+            }
+            root = root.right;
         }
-        
-        helper(root.right, curr*10 + root.val);
-        //st.pop();
+        return result;
     }
 }
