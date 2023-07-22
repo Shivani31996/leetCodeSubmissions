@@ -37,11 +37,11 @@ class Solution {
         {
             result.add(root.val);
         }
-        else
-        {
-            result.set(pos,root.val);
-        }
-        dfs(root.left, pos+1);
+        // else
+        // {
+        //     result.set(pos,root.val);
+        // }
         dfs(root.right, pos+1);
+        dfs(root.left, pos+1);
     }
 }
