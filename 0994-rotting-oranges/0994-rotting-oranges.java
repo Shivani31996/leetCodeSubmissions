@@ -1,55 +1,53 @@
 class Solution {
+    int m;
+    int n;
+    int dirs[][] = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+    
     public int orangesRotting(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-        int time = 0;
-        int fresh = 0;
-        Queue<int[]> q = new LinkedList<>();
-        int dirs[][] = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+        m = grid.length;
+        n = grid[0].length;
         
+        for(int i = 0; i < m; i++)
+        {
+            for(int j = 0; j < n;j++)
+            {
+                if(grid[i][j] == 2)
+                {
+                    dfs(grid,i,j,2);
+                }
+            }
+        }
+        int max = 0;
         for(int i = 0; i < m; i++)
         {
             for(int j = 0; j < n; j++)
             {
-                if(grid[i][j] == 2)
+                if(grid[i][j] == 1)
+                    return -1;
+                else if(grid[i][j] != 0)
                 {
-                    q.add(new int[]{i,j});
-                }
-                else if(grid[i][j] == 1)
-                {
-                    fresh++;
+                    max = Math.max(max,grid[i][j] - 2);
                 }
             }
         }
+        return max;
+    }
+    
+    private void dfs(int[][] grid, int i, int j, int time)
+    {
+        //base
+        if(i < 0 || j < 0 || i == m || j == n)
+            return;
+        if(grid[i][j] != 1 && grid[i][j] < time)
+            return;
         
-        if(fresh == 0)
-            return 0;
-        
-        while(!q.isEmpty())
+        //logic
+        grid[i][j] = time;
+        for(int[] dir:dirs)
         {
-            int size = q.size();
-            
-            for(int i = 0; i<size; i++)
-            {
-                int curr[] = q.poll();
-                for(int[] dir:dirs)
-                {
-                    int nr = curr[0] + dir[0];
-                    int nc = curr[1] + dir[1];
-                    if(nr >= 0 && nc >= 0 && nr < m && nc < n && grid[nr][nc] == 1)
-                    {
-                        q.add(new int[]{nr,nc});
-                        fresh--;
-                        grid[nr][nc] = 2;
-                    }
-                }
-            }
-            time++;
+            int nr = i + dir[0];
+            int nc = j + dir[1];
+            dfs(grid,nr,nc,time + 1);
         }
-        
-        if(fresh != 0)
-            return -1;
-
-        return time - 1;
     }
 }
