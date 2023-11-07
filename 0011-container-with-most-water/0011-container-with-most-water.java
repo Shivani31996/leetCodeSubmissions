@@ -8,10 +8,19 @@ class Solution {
         
         int left = 0;
         int right = height.length - 1;
+        int start = 0;
+        int end = height.length - 1;
         
         while(left < right)
         {
-            max = Math.max(max, Math.min(height[left],height[right])*(right-left));
+            int currArea = Math.min(height[left],height[right])*(right - left);
+            if(currArea > max)
+            {
+                max = currArea;
+                start = left;
+                end = right;
+            }
+
             if(height[left] <= height[right])
             {
                 left++;
@@ -21,7 +30,8 @@ class Solution {
                 right--;
             }
         }
-        
+        System.out.println(start);
+        System.out.println(end);
         return max;
     }
 }
