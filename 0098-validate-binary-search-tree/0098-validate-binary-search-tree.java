@@ -14,23 +14,27 @@
  * }
  */
 class Solution {
+    TreeNode prev;
+    boolean flag;
     public boolean isValidBST(TreeNode root) {
-        return helper(root,null,null);
+        flag = true;
+        inorder(root);
+        return flag;
     }
     
-    private boolean helper(TreeNode root, Integer min, Integer max)
+    private void inorder(TreeNode root)
     {
         //base
         if(root == null)
-            return true;
-        if(min != null && root.val <= min)
-            return false;
-        if(max != null && root.val >= max)
-            return false;
+            return;
         
         //logic
-        boolean left = helper(root.left, min,root.val);
-        boolean right = helper(root.right,root.val,max);
-        return left && right;
+        inorder(root.left);
+        if(prev != null && prev.val >= root.val)
+        {
+            flag = false;
+        }
+        prev = root;
+        inorder(root.right);
     }
 }
