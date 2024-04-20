@@ -4,10 +4,12 @@ class Solution {
         {
             return new int[]{-1,-1};
         }
-        if(nums.length == 1 && nums[0] == target)
-        {
-            return new int[]{0,0};
-        }
+        
+        // //edge case
+        // if(nums.length == 1 && nums[0] == target)
+        // {
+        //     return new int[]{0,0};
+        // }
         
         int low = 0;
         int high = nums.length - 1;
