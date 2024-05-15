@@ -1,16 +1,24 @@
 class Solution {
-    public boolean canFinish(int n, int[][] pre) {
-        if(pre == null || pre.length == 0)
+    public boolean canFinish(int n, int[][] pr) {
+        //form the indegree array
+        
+        //create the adjacency list using HashMap
+        
+        //add to the queue the courses which have no dependencies 
+        
+        if(pr == null || pr.length == 0)
             return true;
         
-        int[] indegree = new int[n];
-        HashMap<Integer,List<Integer>> map = new HashMap<>();
+        HashMap<Integer, List<Integer>> map = new HashMap<>();
         Queue<Integer> q = new LinkedList<>();
         int count = 0;
         
-        for(int []edge: pre)
+        int[] indegree = new int[n];
+        
+        for(int[] edge: pr)
         {
             indegree[edge[0]]++;
+            
             if(!map.containsKey(edge[1]))
             {
                 map.put(edge[1],new ArrayList<>());
@@ -18,7 +26,7 @@ class Solution {
             map.get(edge[1]).add(edge[0]);
         }
         
-        for(int i = 0; i < n; i++)
+        for(int i = 0; i < indegree.length; i++)
         {
             if(indegree[i] == 0)
             {
@@ -29,18 +37,16 @@ class Solution {
         
         while(!q.isEmpty())
         {
-            int course = q.poll();
-            
-            List<Integer> li = map.get(course);
-            
+            int curr = q.poll();
+            List<Integer> li = map.get(curr);
             if(li != null)
             {
-                for(int item: li)
+                for(int edge: li)
                 {
-                    indegree[item]--;
-                    if(indegree[item] == 0)
+                    indegree[edge]--;
+                    if(indegree[edge] == 0)
                     {
-                        q.add(item);
+                        q.add(edge);
                         count++;
                         if(count == n)
                         {
@@ -50,6 +56,8 @@ class Solution {
                 }
             }
         }
-     return false;   
+        
+        return false;
+        
     }
 }
