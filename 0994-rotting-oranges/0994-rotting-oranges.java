@@ -1,14 +1,15 @@
 class Solution {
+    int m,n = 0;
+    int[][] dirs = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};  
+    
     public int orangesRotting(int[][] grid) {
+        
         if(grid == null || grid.length == 0)
             return 0;
         
-        int m = grid.length;
-        int n = grid[0].length;
-        int fresh = 0;
-        int time = 0;
-        Queue<int[]> q = new LinkedList<>();
-        int[][] dirs = new int[][]{{0,1},{0,-1},{1,0},{-1,0}};
+        int max = 0;
+        m = grid.length;
+        n = grid[0].length;     
         
         for(int i = 0; i < m; i++)
         {
@@ -16,43 +17,42 @@ class Solution {
             {
                 if(grid[i][j] == 2)
                 {
-                    q.add(new int[]{i,j});
-                }
-                else if(grid[i][j] == 1)
-                {
-                    fresh++;
+                    dfs(grid,i,j,2);
                 }
             }
         }
         
-        if(fresh == 0)
-            return 0;
-        while(!q.isEmpty())
+        for(int i = 0; i < m; i++)
         {
-            int size = q.size();
-            for(int i = 0; i < size; i++)
+            for(int j = 0; j < n; j++)
             {
-                int[] curr = q.poll();
-                for(int [] dir: dirs)
-                {
-                    int nr = curr[0] + dir[0];
-                    int nc = curr[1] + dir[1];
-                    
-                    if(nr >= 0 && nr < m && nc >= 0 && nc < n && grid[nr][nc] == 1)
-                    {
-                        grid[nr][nc] = 2;
-                        q.add(new int[]{nr,nc});
-                        fresh--;
-                    }
-                }
+                if(grid[i][j] == 1)
+                    return -1;
+                else if(grid[i][j] != 0)
+                    max = Math.max(max,grid[i][j] - 2);
             }
-            time++;
         }
+        return max;
+    }
+    
+    private void dfs(int[][] grid, int i, int j, int time)
+    {
+        //base
         
-        if(fresh == 0)
+        if(i < 0 || i == m || j < 0 || j == n)
+            return;
+        if(grid[i][j] != 1 && grid[i][j] < time)
+            return;
+        
+        //logic
+        
+        grid[i][j] = time;
+        for(int[] dir : dirs)
         {
-            return time - 1;
+            int nr = dir[0] + i;
+            int nc = dir[1] + j;
+            
+            dfs(grid,nr,nc,time+1);
         }
-        return -1;
     }
 }
