@@ -34,17 +34,17 @@ class Solution {
         currSum += root.val;
         path.add(root.val);
         
-        helper(root.left, target, new ArrayList<>(path), currSum);
-        
         if(root.left == null && root.right == null)
         {
             if(currSum == target)
             {
-                result.add(path);
+                result.add(new ArrayList<>(path));
             }
         }
         
-        helper(root.right,target, new ArrayList<>(path), currSum);
+        helper(root.left, target, path, currSum);
+        helper(root.right,target, path, currSum);
+        path.remove(path.size() - 1);
         
     }
 }
