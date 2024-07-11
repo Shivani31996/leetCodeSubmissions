@@ -34,6 +34,7 @@ class Solution {
         currSum += root.val;
         path.add(root.val);
         
+        helper(root.left, target, path, currSum);
         if(root.left == null && root.right == null)
         {
             if(currSum == target)
@@ -41,8 +42,6 @@ class Solution {
                 result.add(new ArrayList<>(path));
             }
         }
-        
-        helper(root.left, target, path, currSum);
         helper(root.right,target, path, currSum);
         path.remove(path.size() - 1);
         
