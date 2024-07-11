@@ -14,34 +14,37 @@
  * }
  */
 class Solution {
-    List<List<Integer>> result = new ArrayList<>();
-    public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
-        helper(root,new ArrayList<>(), targetSum, 0);
+    List<List<Integer>> result;
+    public List<List<Integer>> pathSum(TreeNode root, int target) {
+        result = new ArrayList<>();
+        if(root == null)
+            return result;
+        
+        helper(root, target, new ArrayList<>(), 0);
         return result;
     }
     
-    private void helper(TreeNode root, List<Integer> path, int target, int currSum)
+    private void helper(TreeNode root, int target, List<Integer> path, int currSum)
     {
         //base
         if(root == null)
             return;
+        
         //logic
-        //action
         currSum += root.val;
         path.add(root.val);
         
-        //recurse
-        helper(root.left,new ArrayList<>(path),target,currSum);
-        helper(root.right,new ArrayList<>(path),target,currSum);
+        helper(root.left, target, new ArrayList<>(path), currSum);
         
         if(root.left == null && root.right == null)
         {
             if(currSum == target)
             {
-                result.add(new ArrayList<>(path));
+                result.add(path);
             }
         }
         
-        path.remove(path.size() - 1);
+        helper(root.right,target, new ArrayList<>(path), currSum);
+        
     }
 }
