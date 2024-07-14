@@ -39,7 +39,7 @@ class Solution {
                 flag = true;
             }
         }
-        helper(root.left,target,currSum);
         helper(root.right,target,currSum);
+        helper(root.left,target,currSum);
     }
 }
