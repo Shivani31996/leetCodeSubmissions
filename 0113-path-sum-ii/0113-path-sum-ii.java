@@ -32,8 +32,10 @@ class Solution {
         
         //logic
         currSum += root.val;
+        //action
         path.add(root.val);
         
+        //recurse
         helper(root.left, target, path, currSum);
         if(root.left == null && root.right == null)
         {
@@ -43,7 +45,8 @@ class Solution {
             }
         }
         helper(root.right,target, path, currSum);
-        path.remove(path.size() - 1);
         
+        //backtrack
+        path.remove(path.size() - 1);
     }
 }
