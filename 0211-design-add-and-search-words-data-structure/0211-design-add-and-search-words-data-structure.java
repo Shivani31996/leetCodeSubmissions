@@ -34,17 +34,17 @@ class WordDictionary {
         return searchword(word,root,0);
     }
     
-    private boolean searchword(String word, TrieNode root, int index)
+    private boolean searchword(String word, TrieNode curr, int index)
     {
         //base
         if(index == word.length())
-            return root.isEnd;
+            return curr.isEnd;
         
         //logic
         char ch = word.charAt(index);
         if(ch == '.')
         {
-            for(TrieNode child: root.children)
+            for(TrieNode child: curr.children)
             {
                 if(child != null && searchword(word,child,index+1))
                 {
@@ -54,10 +54,10 @@ class WordDictionary {
             return false;
         }
         
-        if(root.children[ch - 'a'] == null)
+        if(curr.children[ch - 'a'] == null)
             return false;
         
-        return searchword(word,root.children[ch - 'a'],index+1);
+        return searchword(word,curr.children[ch - 'a'],index+1);
     }
 }
 
