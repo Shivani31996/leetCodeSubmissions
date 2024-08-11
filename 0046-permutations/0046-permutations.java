@@ -3,7 +3,7 @@ class Solution {
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> path = new ArrayList<>();
         boolean map[] = new boolean[nums.length];
-        
+        Arrays.sort(nums);
         helper(nums,result,path,map);
         return result;
     }
