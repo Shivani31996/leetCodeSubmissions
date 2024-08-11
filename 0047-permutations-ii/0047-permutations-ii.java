@@ -20,9 +20,9 @@ class Solution {
         //logic
         for(int i = 0; i < nums.length; i++)
         {   
-            if(map[i])
+            if(map[i] == true)
                 continue;
-            if(i != 0 && nums[i] == nums[i - 1] && !map[i-1])
+            if(i != 0 && nums[i] == nums[i - 1] && map[i-1] == true)
                 continue;
             path.add(nums[i]);
             map[i] = true;
