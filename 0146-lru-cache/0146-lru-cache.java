@@ -1,10 +1,11 @@
 class LRUCache {
     
-    class Node{
+    class Node {
         int key;
         int val;
         Node prev;
         Node next;
+        
         public Node(int key,int val)
         {
             this.key = key;
@@ -12,13 +13,12 @@ class LRUCache {
         }
     }
     
-    public void removeNode(Node node)
-    {
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
-    }
+    Node head;
+    Node tail;
+    HashMap<Integer,Node> map;
+    int capacity;
     
-    public void addtoHead(Node node)
+    public void addNodeToHead(Node node)
     {
         node.prev = head;
         node.next = head.next;
@@ -26,17 +26,20 @@ class LRUCache {
         head.next = node;
     }
     
-    Node head;
-    Node tail;
-    HashMap<Integer,Node> map;
-    int capacity;
+    public void removeNode(Node node)
+    {
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+    }
+
     public LRUCache(int capacity) {
+        this.capacity = capacity;
         this.head = new Node(-1,-1);
         this.tail = new Node(-1,-1);
-        this.head.next = this.tail;
-        this.tail.prev = this.head;
-        this.capacity = capacity;
         this.map = new HashMap<>();
+        
+        head.next = tail;
+        tail.prev = head;
     }
     
     public int get(int key) {
@@ -44,7 +47,7 @@ class LRUCache {
             return -1;
         Node temp = map.get(key);
         removeNode(temp);
-        addtoHead(temp);
+        addNodeToHead(temp);
         return temp.val;
     }
     
@@ -54,19 +57,19 @@ class LRUCache {
             Node temp = map.get(key);
             temp.val = value;
             removeNode(temp);
-            addtoHead(temp);
+            addNodeToHead(temp);
         }
         else
         {
-            if(capacity == map.size())
+            if(map.size() == capacity)
             {
-                Node tailPrev = tail.prev;
-                removeNode(tailPrev);
-                map.remove(tailPrev.key);
+                Node last = tail.prev;
+                removeNode(last);
+                map.remove(last.key);
             }
             Node newNode = new Node(key,value);
-            addtoHead(newNode);
             map.put(key,newNode);
+            addNodeToHead(newNode);
         }
     }
 }
