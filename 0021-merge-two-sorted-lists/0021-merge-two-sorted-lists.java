@@ -10,36 +10,38 @@
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if(list1 == null && list2 != null)
+            return list2;
+        if(list2 == null && list1 != null)
+            return list1;
+        if(list1 == null && list2 == null)
+            return null;
+        
         PriorityQueue<ListNode> pq = new PriorityQueue<>((a,b) -> a.val - b.val);
         
-        if(list1 == null && list2 != null)
-        {
-            return list2;
-        }
-        if(list2 == null && list1 != null)
-        {
-            return list1;
-        }
-        if(list1 != null && list2 != null)
+        while(list1 != null)
         {
             pq.add(list1);
+            list1 = list1.next;
+        }
+        
+        while(list2 != null)
+        {
             pq.add(list2);
+            list2 = list2.next;
         }
         
         ListNode result = new ListNode(-1);
-        ListNode curr = result;
+        ListNode dummy = result;
+        
         while(!pq.isEmpty())
         {
-            ListNode min = pq.poll();
-            curr.next = min;
-            curr = curr.next;
-            if(min.next != null)
-            {
-                pq.add(min.next);
-            }
+            ListNode curr = pq.poll();
+            curr.next = null;
+            dummy.next = curr;
+            dummy = dummy.next;
         }
         
         return result.next;
-        
     }
 }
