@@ -1,60 +1,66 @@
 class Solution {
-    class TrieNode{
-            boolean isEnd;
-            TrieNode children[];
-            public TrieNode(){
-                this.children = new TrieNode[26];
-            }
-        }
-    
-    TrieNode root;
-    StringBuilder sb;
-    
-    public void insert(String word)
-    {
-        TrieNode curr = root;
-        for(int i = 0; i < word.length();i++)
+    class TrieNode {
+        boolean isEnd;
+        TrieNode[] children;
+        
+        public TrieNode()
         {
-            char c = word.charAt(i);
-            if(curr.children[c - 'a'] == null){
-                curr.children[c - 'a'] = new TrieNode();
-            }
-            curr = curr.children[c - 'a'];
+            children = new TrieNode[26];
         }
-        curr.isEnd = true;
     }
     
+    TrieNode root;
+    StringBuilder currStr;
     public String longestWord(String[] words) {
         root = new TrieNode();
-        sb = new StringBuilder();
-        
+        currStr = new StringBuilder();
         for(String word: words)
         {
             insert(word);
         }
+        
         backtrack(root, new StringBuilder());
-        return sb.toString();
+        return currStr.toString();
     }
     
-    private void backtrack(TrieNode curr,StringBuilder currStr){
-        //base
-        if(currStr.length() > sb.length())
+    public void insert(String word)
+    {
+        TrieNode curr = root;
+        for(int i = 0; i < word.length(); i++)
         {
-            sb = new StringBuilder(currStr);
+            char ch = word.charAt(i);
+            if(curr.children[ch - 'a'] == null)
+            {
+                curr.children[ch - 'a'] = new TrieNode();
+            }
+            curr = curr.children[ch - 'a'];
         }
+        curr.isEnd = true;
+    }
+    
+    public void backtrack(TrieNode curr,StringBuilder sb)
+    {
+        //base
+        if(sb.length() > currStr.length())
+        {
+            currStr = new StringBuilder(sb);
+        }
+        
         //logic
-        for(int i = 0; i < 26;i++)
+        for(int i = 0; i < 26; i++)
         {
             if(curr.children[i] != null && curr.children[i].isEnd)
             {
-                int le = currStr.length();
                 //action
-                currStr.append((char)(i + 'a'));
+                int length = sb.length();
                 //recurse
-                backtrack(curr.children[i],currStr);
+                backtrack(curr.children[i],sb.append((char)(i + 'a')));
+                
                 //backtrack
-                currStr.setLength(le);
+                sb.setLength(length);
             }
         }
     }
+    
+    
 }
