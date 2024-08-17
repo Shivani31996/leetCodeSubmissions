@@ -14,22 +14,36 @@
  * }
  */
 class Solution {
+    boolean flag = true;
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        helper(p,q);
+        return flag;
+    }
+    
+    private void helper(TreeNode p,TreeNode q)
+    {
+        //base
+        if(p == null && q != null)
+        {
+            flag = false;
+            return;
+        }
+        if(p != null && q == null)
+        {
+            flag = false;
+            return;
+        }
         if(p == null && q == null)
         {
-            return true;
+            return;
         }
-        
-        if(p == null || q == null)
-        {
-            return false;
-        }
-        
         if(p.val != q.val)
         {
-            return false;
+            flag = false;
+            return;
         }
-        
-        return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+        //logic
+        helper(p.left,q.left);
+        helper(p.right,q.right);
     }
 }
