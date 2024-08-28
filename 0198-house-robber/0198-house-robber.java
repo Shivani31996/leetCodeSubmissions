@@ -2,25 +2,17 @@ class Solution {
     public int rob(int[] nums) {
         int dp[] = new int[nums.length];
         Arrays.fill(dp,-1);
+        dp[0] = nums[0];
         
-       return helper(nums,nums.length - 1,dp);
-    }
-    
-    private int helper(int[] nums,int index,int[] dp)
-    {
-        //base
-        if(index == 0)
-            return nums[index];
-        if(index < 0)
-            return 0;
-        if(dp[index] != -1)
-            return dp[index];
+        for(int i = 1; i < nums.length; i++)
+        {
+            int pick = nums[i];
+            if(i > 1)
+                pick += dp[i-2];
+            int not_pick = dp[i-1];
+            dp[i] = Math.max(pick,not_pick);
+        }
         
-        //logic
-        int pick = nums[index] + helper(nums,index - 2,dp);
-        int not_pick = helper(nums,index - 1,dp);
-        System.out.println(pick+"   " +not_pick);
-        return dp[index] = Math.max(pick,not_pick);
-        
+       return dp[nums.length - 1];
     }
 }
