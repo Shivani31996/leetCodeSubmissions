@@ -1,52 +1,38 @@
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
-        HashMap<Character,Integer> map = new HashMap<>();
         List<Integer> result = new ArrayList<>();
+        int m = s.length();
+        int n = p.length();
         
-        if(p.length() > s.length())
+        int[] sMap = new int[26];
+        int[] pMap = new int[26];
+        
+        if(n > m)
         {
             return result;
         }
         
-        for(int i=0; i < p.length(); i++)
+        for(int i = 0; i < p.length(); i++)
         {
-            char c = p.charAt(i);
-            map.put(c,map.getOrDefault(c,0) + 1);
+            sMap[s.charAt(i) - 'a']++;
+            pMap[p.charAt(i) - 'a']++;
         }
         
-        int match = 0;
-        for(int i = 0; i < s.length(); i++)
+        if(Arrays.equals(sMap,pMap))
         {
-            //incoming character
-            char in = s.charAt(i);
-            if(map.containsKey(in)){
-                int count = map.get(in);
-                count--;
-                if(count == 0)
-                {
-                    match++;
-                }
-                map.put(in,count);
-            }
-            
-            //outgoing character
-            if(i >= p.length())
-            {
-                char out = s.charAt(i - p.length());
-                if(map.containsKey(out))
-                {
-                    int count = map.get(out);
-                    count++;
-                    if(count == 1)
-                    {
-                        match--;
-                    }
-                    map.put(out,count);
-                }
-            }
-            if(match == map.size())
-                result.add(i - p.length() + 1);
+            result.add(0);
         }
+        
+        for(int i = n; i < m; i++)
+        {
+            sMap[s.charAt(i) - 'a']++;
+            sMap[s.charAt(i-n) -'a']--;
+            if(Arrays.equals(sMap,pMap))
+            {
+                result.add(i-n+1);
+            }
+        }
+        
         return result;
     }
 }
