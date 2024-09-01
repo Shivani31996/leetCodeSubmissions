@@ -2,7 +2,7 @@ class Solution {
     public List<String> validStrings(int n) {
         List<String> result = new ArrayList<>();
         
-        helper(n,result,0,new StringBuilder(),true);
+        helper(n,result,0,new StringBuilder(),false);
         return result;
     }
     
