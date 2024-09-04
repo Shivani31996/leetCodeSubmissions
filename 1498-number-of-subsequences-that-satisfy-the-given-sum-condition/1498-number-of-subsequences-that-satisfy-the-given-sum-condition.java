@@ -12,7 +12,9 @@ public class Solution {
         power[0] = 1;
         for (int i = 1; i < n; i++) {
             power[i] = (power[i - 1] * 2) % mod;
+            System.out.println(power[i]);
         }
+        
 
         while (left <= right) {
             if (nums[left] + nums[right] <= target) {
