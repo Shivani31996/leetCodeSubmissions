@@ -8,7 +8,7 @@ class Solution {
             map.put(num,map.getOrDefault(num,1)+1);
         }
         
-        //Add the keys in HashMap to a PQ/minHeap which will order the elements based on the 
+        //Add the keys in HashMap to a PQ/maxHeap which will order the elements based on the 
         //freq of it
         PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> map.get(b) - map.get(a));
         
@@ -24,14 +24,6 @@ class Solution {
                 i++;
             }
         }
-        
-        //In the end, only k elements remain in the PQ which is our answer which
-        //we write to the result array
-        // int result[] = new int[k];
-        // for(int i = 0; i<k; i++)
-        // {
-        //     result[i] = pq.poll();
-        // }
         
         return result;
     }
