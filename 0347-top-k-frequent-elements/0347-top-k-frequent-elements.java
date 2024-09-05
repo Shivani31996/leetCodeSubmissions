@@ -5,7 +5,7 @@ class Solution {
         //maintain a key-value pair in HashMap for all nums
         for(int num: nums)
         {
-            map.put(num,map.getOrDefault(num,0)+1);
+            map.put(num,map.getOrDefault(num,1)+1);
         }
         
         //Add the keys in HashMap to a PQ/minHeap which will order the elements based on the 
