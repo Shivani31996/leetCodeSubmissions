@@ -10,25 +10,28 @@ class Solution {
         
         //Add the keys in HashMap to a PQ/minHeap which will order the elements based on the 
         //freq of it
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> map.get(a) - map.get(b));
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a,b) -> map.get(b) - map.get(a));
         
         //Iterate over the keys in HashMap and enter it in PQ
+        int result[] = new int[k];
+        int i = 0;
         for(int key: map.keySet())
         {
             pq.add(key);
-            if(pq.size() > k)
+            if(pq.size() > (map.size() - k))
             {
-                pq.poll();
+                result[i] = pq.poll();
+                i++;
             }
         }
         
         //In the end, only k elements remain in the PQ which is our answer which
         //we write to the result array
-        int result[] = new int[k];
-        for(int i = 0; i<k; i++)
-        {
-            result[i] = pq.poll();
-        }
+        // int result[] = new int[k];
+        // for(int i = 0; i<k; i++)
+        // {
+        //     result[i] = pq.poll();
+        // }
         
         return result;
     }
