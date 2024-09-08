@@ -14,29 +14,29 @@
  * }
  */
 class Solution {
-    int maxlevel = Integer.MIN_VALUE;
+    int max = 0;
     public int maxDepth(TreeNode root) {
-        if(root == null)
-            return 0;
-        depth(root,1);
-        return maxlevel;
+        dfs(root,1);
+        return max;
     }
     
-    private void depth(TreeNode root,int level)
+    private void dfs(TreeNode root, int level)
     {
         //base
         if(root == null)
+        {
             return;
+        }
         if(root.left == null && root.right == null)
         {
-            if(level > maxlevel)
-            {
-                maxlevel = level;
-            }
+            max = Math.max(max,level);
+            System.out.println(max);
         }
         
         //logic
-        depth(root.left,level+1);
-        depth(root.right,level+1);
+        dfs(root.left,level+1);
+        System.out.println("Max after left: "+max);
+        dfs(root.right,level+1);
+        System.out.println("Max after right: "+max);
     }
 }
