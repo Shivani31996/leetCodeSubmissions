@@ -1,16 +1,19 @@
+//solving using recursion
 class Solution {
     public void reverseString(char[] s) {
-        int low = 0;
-        int high = s.length - 1;
-        char temp;
+        reverse(s,0,s.length - 1);
+    }
+    
+    private void reverse(char[] s, int start, int end)
+    {
+        //base
+        if(start > end)
+            return;
         
-        while(low <= high)
-        {
-            temp = s[low];
-            s[low] = s[high];
-            s[high] = temp;
-            low++;
-            high--;
-        }
+        //logic
+        char temp = s[start];
+        s[start] = s[end];
+        s[end] = temp;
+        reverse(s,start+1,end-1);
     }
 }
