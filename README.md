@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 ## Two Pointers
 |  |
 | ------- |
@@ -41,4 +42,8 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
+## Binary Search
+|  |
+| ------- |
+| [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 <!---LeetCode Topics End-->
