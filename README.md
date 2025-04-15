@@ -54,10 +54,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -66,4 +68,9 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 <!---LeetCode Topics End-->
