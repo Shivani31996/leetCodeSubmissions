@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 ## Two Pointers
@@ -45,5 +46,6 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Search
 |  |
 | ------- |
+| [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 <!---LeetCode Topics End-->
