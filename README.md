@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
@@ -59,11 +60,13 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 ## Binary Tree
 |  |
 | ------- |
@@ -73,4 +76,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
+## Union Find
+|  |
+| ------- |
+| [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+## Matrix
+|  |
+| ------- |
+| [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 <!---LeetCode Topics End-->
