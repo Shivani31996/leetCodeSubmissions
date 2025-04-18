@@ -17,21 +17,26 @@ class Solution {
     List<Integer> result;
     public List<Integer> rightSideView(TreeNode root) {
         result = new ArrayList<>();
-        
+
         if(root == null)
+        {
             return result;
-        helper(root,0);
+        }
+        
+        dfs(root,0);
         return result;
     }
-    
-    private void helper(TreeNode root, int level)
+
+    private void dfs(TreeNode root, int level)
     {
         //base
         if(root == null)
+        {
             return;
-        
+        }
+
         //logic
-        if(level == result.size())
+        if(result.size() == level)
         {
             result.add(root.val);
         }
@@ -39,8 +44,7 @@ class Solution {
         {
             result.set(level,root.val);
         }
-        
-        helper(root.left,level+1);
-        helper(root.right,level+1);
+        dfs(root.left, level+1);
+        dfs(root.right, level+1);
     }
 }
