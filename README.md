@@ -54,11 +54,13 @@ Collection of LeetCode questions to ace the coding interview!
 ## Tree
 |  |
 | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 ## Depth-First Search
 |  |
 | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
@@ -70,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Tree
 |  |
 | ------- |
+| [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 ## Binary Search Tree
