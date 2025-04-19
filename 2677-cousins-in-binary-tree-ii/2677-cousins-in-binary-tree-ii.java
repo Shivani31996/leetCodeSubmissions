@@ -15,65 +15,69 @@
  */
 class Solution {
     public TreeNode replaceValueInTree(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<>();
         List<Integer> li = new ArrayList<>();
-        dfs1(root, 0, li);
 
-        dfs2(root, 0, li);
+        q.add(root);
+
+        while(!q.isEmpty())
+        {
+            int levelSum = 0;
+            int size = q.size();
+            for(int i = 0; i < size; i++)
+            {
+                TreeNode curr = q.poll();
+                levelSum += curr.val;
+
+                if(curr.left != null)
+                {
+                    q.add(curr.left);
+                }
+
+                if(curr.right != null)
+                {
+                    q.add(curr.right);
+                }
+            }
+            li.add(levelSum);
+        }
+
+        q.add(root);
+        root.val = 0;
+        int level = 1;
+
+        while(!q.isEmpty())
+        {
+            int size = q.size();
+            for(int i = 0; i < size; i++)
+            {
+                int siblingSum = 0;
+                TreeNode curr = q.poll();
+
+                if(curr.left != null)
+                {
+                    siblingSum += curr.left.val;
+                }
+                if(curr.right != null)
+                {
+                    siblingSum += curr.right.val;
+                }
+
+                if(curr.left != null)
+                {
+                    q.add(curr.left);
+                    curr.left.val = li.get(level) - siblingSum;
+                }
+
+                if(curr.right != null)
+                {
+                    q.add(curr.right);
+                    curr.right.val = li.get(level) - siblingSum;
+                }
+            }
+            level++;
+        }
 
         return root;
     }
-
-    private void dfs1(TreeNode root, int level, List<Integer> li)
-    {
-        //base
-        if(root == null)
-        {
-            return;
-        }
-
-        //logic
-        if(li.size() == level)
-        {
-            li.add(0);
-        }
-        li.set(level, li.get(level)+root.val);
-
-        dfs1(root.left, level+1, li);
-        dfs1(root.right, level+1, li);
-    }
-
-    private void dfs2(TreeNode root, int level, List<Integer> li)
-    {
-        //base
-        if(root == null)
-        {
-            return;
-        }
-
-        //logic
-        root.val = li.get(level) - root.val;
-        int childrenSum = 0;
-        if(root.left != null)
-        {
-            childrenSum += root.left.val;
-        }
-
-        if(root.right != null)
-        {
-            childrenSum += root.right.val;
-        }
-        if(root.left != null)
-        {
-            root.left.val = childrenSum;
-        }
-        if(root.right != null)
-        {
-            root.right.val = childrenSum;
-        }
-
-        dfs2(root.left, level+1, li);
-        dfs2(root.right, level+1, li);
-    }
-
-
 }
