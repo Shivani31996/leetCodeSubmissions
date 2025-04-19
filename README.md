@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 ## Two Pointers
@@ -46,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Counting
 |  |
 | ------- |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 ## Binary Search
 |  |
@@ -70,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0543-diameter-of-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0543-diameter-of-binary-tree) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Breadth-First Search
 |  |
@@ -77,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0199-binary-tree-right-side-view](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0199-binary-tree-right-side-view) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Binary Tree
 |  |
@@ -95,8 +99,10 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 ## Matrix
 |  |
 | ------- |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+| [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 <!---LeetCode Topics End-->
