@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+| [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## String
 |  |
 | ------- |
+| [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 ## Counting
 |  |
@@ -111,6 +113,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
 | [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
+| [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 ## Matrix
 |  |
@@ -123,4 +126,5 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
 | [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
+| [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 <!---LeetCode Topics End-->
