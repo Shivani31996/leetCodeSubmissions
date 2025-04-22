@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0543-diameter-of-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0543-diameter-of-binary-tree) |
+| [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [0975-range-sum-of-bst](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0975-range-sum-of-bst) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
@@ -86,6 +87,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
+| [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
@@ -107,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
+| [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 ## Matrix
@@ -119,4 +122,5 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
+| [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 <!---LeetCode Topics End-->
