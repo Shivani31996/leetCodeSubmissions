@@ -1,58 +1,55 @@
+public class UnionFind {
+    private int id[];
+
+    UnionFind(int n)
+    {
+        id = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+            id[i] = i;
+        }
+    }
+
+    public int find(int i)
+    {
+        while(i != id[i])
+        {
+            i = id[i];
+        }
+        return i;
+    }
+
+    public boolean union(int p, int q)
+    {
+        int rootP = find(p);
+        int rootQ = find(q);
+
+        if(rootP == rootQ)
+        {
+            return false;
+        }
+
+        id[rootP] = rootQ;
+        return true;
+    }
+}
 class Solution {
-    private boolean hasCycle = false;
-
     public boolean validTree(int n, int[][] edges) {
-        List<List<Integer>> graph = new ArrayList<>();
-        boolean[] visited = new boolean[n];
-
         if(edges.length != (n-1))
         {
             return false;
         }
 
-        for(int i = 0; i < n; i++)
-        {
-            graph.add(new ArrayList<>());
-        }
+        UnionFind uf = new UnionFind(n);
 
         for(int[] edge: edges)
         {
-            graph.get(edge[0]).add(edge[1]);
-            graph.get(edge[1]).add(edge[0]);
-        }
-
-        hasCycle(0, -1, visited, graph);
-        if(hasCycle)
-        {
-            return false;
-        }
-
-        for(int i = 0; i < n; i++)
-        {
-            if(!visited[i])
+            if(!uf.union(edge[0], edge[1]))
             {
                 return false;
             }
         }
 
         return true;
-    }
-
-    private void hasCycle(int node, int parent, boolean[] visited, List<List<Integer>> graph)
-    {
-        //logic
-        visited[node] = true;
-        for(int neighbor: graph.get(node))
-        {
-            if(!visited[neighbor])
-            {
-                hasCycle(neighbor, node, visited, graph);
-            }
-            else if(neighbor != parent)
-            {
-                hasCycle = true;
-                return;
-            }
-        }
     }
 }
