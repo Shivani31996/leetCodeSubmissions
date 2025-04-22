@@ -1,63 +1,56 @@
 class Solution {
-    public boolean canFinish(int n, int[][] pr) {
-        //form the indegree array
-        
-        //create the adjacency list using HashMap
-        
-        //add to the queue the courses which have no dependencies 
-        
-        if(pr == null || pr.length == 0)
-            return true;
-        
-        HashMap<Integer, List<Integer>> map = new HashMap<>();
-        Queue<Integer> q = new LinkedList<>();
-        int count = 0;
-        
+    public boolean canFinish(int n, int[][] prerequisites) {
         int[] indegree = new int[n];
-        
-        for(int[] edge: pr)
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        boolean[] visited = new boolean[n];
+
+        for(int[] pre: prerequisites)
         {
-            indegree[edge[0]]++;
-            
-            if(!map.containsKey(edge[1]))
+            int u = pre[0];
+            int v = pre[1];
+
+            indegree[u]++;
+            if(!map.containsKey(v))
             {
-                map.put(edge[1],new ArrayList<>());
+                map.put(v, new ArrayList<>());
             }
-            map.get(edge[1]).add(edge[0]);
+            map.get(v).add(u);
         }
-        
-        for(int i = 0; i < indegree.length; i++)
+
+        for(int i = 0; i < n; i++)
         {
-            if(indegree[i] == 0)
+            if(indegree[i] == 0 && !visited[i])
             {
-                q.add(i);
-                count++;
+                dfs(i, map, indegree, visited);
             }
         }
-        
-        while(!q.isEmpty())
+
+        for(int i = 0; i < n; i++)
         {
-            int curr = q.poll();
-            List<Integer> li = map.get(curr);
-            if(li != null)
+            if(visited[i] != true)
             {
-                for(int edge: li)
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public void dfs(int course, Map<Integer, List<Integer>> map, int[] indegree, boolean[] visited)
+    {
+        visited[course] = true;
+        List<Integer> courses = map.get(course);
+
+        if(courses != null)
+        {
+            for(int c: courses)
+            {
+                indegree[c]--;
+                if(indegree[c] == 0 && !visited[c])
                 {
-                    indegree[edge]--;
-                    if(indegree[edge] == 0)
-                    {
-                        q.add(edge);
-                        count++;
-                        if(count == n)
-                        {
-                            return true;
-                        }
-                    }
+                    dfs(c, map, indegree, visited);
                 }
             }
         }
-        
-        return false;
-        
     }
 }
