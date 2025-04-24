@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Array
 |  |
 | ------- |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
@@ -45,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## String
 |  |
 | ------- |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 ## Counting
@@ -75,6 +77,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
@@ -92,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0207-course-schedule](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
@@ -134,6 +138,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0207-course-schedule](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
 | [0261-graph-valid-tree](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0261-graph-valid-tree) |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
@@ -142,4 +147,5 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0207-course-schedule](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
+| [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 <!---LeetCode Topics End-->
