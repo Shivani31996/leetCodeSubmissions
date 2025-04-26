@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 ## Two Pointers
@@ -41,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
 ## String
@@ -48,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview!
 | ------- |
 | [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 ## Counting
 |  |
@@ -145,6 +148,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 ## Topological Sort
 |  |
 | ------- |
@@ -152,4 +156,5 @@ Collection of LeetCode questions to ace the coding interview!
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
 | [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
