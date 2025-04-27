@@ -150,6 +150,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0684-redundant-connection](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0684-redundant-connection) |
 | [0820-find-eventual-safe-states](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0820-find-eventual-safe-states) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
+| [1101-parallel-courses](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1101-parallel-courses) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 ## Topological Sort
@@ -159,6 +160,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [0210-course-schedule-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0210-course-schedule-ii) |
 | [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
 | [0820-find-eventual-safe-states](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0820-find-eventual-safe-states) |
+| [1101-parallel-courses](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1101-parallel-courses) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
