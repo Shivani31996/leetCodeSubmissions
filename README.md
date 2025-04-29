@@ -95,6 +95,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
 | [1780-lowest-common-ancestor-of-a-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1780-lowest-common-ancestor-of-a-binary-tree-ii) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
+| [2793-count-the-number-of-complete-components](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2793-count-the-number-of-complete-components) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -113,6 +114,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1507-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1507-check-if-there-is-a-valid-path-in-a-grid) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2677-cousins-in-binary-tree-ii) |
+| [2793-count-the-number-of-complete-components](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2793-count-the-number-of-complete-components) |
 ## Binary Tree
 |  |
 | ------- |
@@ -137,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
 | [1507-check-if-there-is-a-valid-path-in-a-grid](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1507-check-if-there-is-a-valid-path-in-a-grid) |
+| [2793-count-the-number-of-complete-components](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2793-count-the-number-of-complete-components) |
 ## Matrix
 |  |
 | ------- |
@@ -158,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview!
 | [1101-parallel-courses](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1101-parallel-courses) |
 | [1558-course-schedule-iv](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1558-course-schedule-iv) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+| [2793-count-the-number-of-complete-components](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2793-count-the-number-of-complete-components) |
 ## Topological Sort
 |  |
 | ------- |
