@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0269-alien-dictionary](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0269-alien-dictionary) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1032-satisfiability-of-equality-equations](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1032-satisfiability-of-equality-equations) |
@@ -29,10 +30,12 @@ Collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2300-construct-string-with-repeat-limit) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 ## Prefix Sum
@@ -61,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Binary Search
 |  |
 | ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [1192-divide-chocolate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1192-divide-chocolate) |
 | [2665-minimum-time-to-repair-cars](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/2665-minimum-time-to-repair-cars) |
 ## Tree
@@ -143,6 +147,7 @@ Collection of LeetCode questions to ace the coding interview!
 ## Matrix
 |  |
 | ------- |
+| [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0378-kth-smallest-element-in-a-sorted-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0854-making-a-large-island](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/0854-making-a-large-island) |
 | [1396-count-servers-that-communicate](https://github.com/Shivani31996/leetCodeSubmissions/tree/master/1396-count-servers-that-communicate) |
